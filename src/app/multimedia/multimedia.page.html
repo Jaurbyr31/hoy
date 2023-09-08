@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-icon name="play-circle-outline" (click)="playmusic()"></ion-icon>
+      
+      <ion-icon name="pause-circle-outline" (click)="pausemusic()"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="home" (click)="irHome()"></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
